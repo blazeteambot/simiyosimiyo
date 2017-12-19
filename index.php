@@ -34,7 +34,7 @@ if($message['type']=='sticker')
 						
 }
 else
-$pesan=str_replace(" ", "%20", $pesan_datang);
+$pesan=str_replace(" ", "%1000", $pesan_datang);
 $key = '18b4931c-bde5-49ef-8bac-194ce1f6e4a3'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
